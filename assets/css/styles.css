@@ -1,11 +1,11 @@
-.banner{
-    background-image: url('#');
-  background-color:#000;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: table;
-  width: 100%;
+.body,html{
   height: 100%;
-  position: relative;
+}
+
+.hero-image{
+  bottom: 15px;
+  left: 50%;
+  margin-left: -12px;
+  cursor: pointer;
+  animation: opacity 3s;
 }

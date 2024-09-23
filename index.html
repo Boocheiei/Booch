@@ -1,87 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="SUPEE viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPEE</title>
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- Style ควรเก็บไว้ในโฟลเดอร์ CSS เลย -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="SUPEE viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPEE</title>
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Style ควรเก็บไว้ในโฟลเดอร์ CSS เลย -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
+
 <body>
 
   <!-- P'Best Edit -->
-      <!-- ให้ Header อยู่ครอบนอก Footer เช่นกัน -->
-      <Header class="bg-light">
-        <div class="container">
-          <!-- เลือกจากเมนูบน Bootstrap ที่ชื่อว่า Navbar แล้วลองปรับใช้ -->
+  <!-- ให้ Header อยู่ครอบนอก Footer เช่นกัน -->
+  <Header class="bg-light">
+    <div class="container">
+      <!-- เลือกจากเมนูบน Bootstrap ที่ชื่อว่า Navbar แล้วลองปรับใช้ -->
 
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">ร้านสุภีครกใหญ่</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ร้านสุภีครกใหญ่</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">สินค้า</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  เมนู
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">สินค้า</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      เมนู
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">เกี่ยวกับ</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-           
-        </div>
-      </Header>
-
-
-      <!-- P'Best Edit -->
-      <!--  ทริค พี่มักจะทำ Section ครอบในแต่ละส่วนให้ชัดเจน -->
-      <section>
-        <div class="continer">
-          <div class="row">
-            <div class="col-12 text-center">
-
-              <h1 class="">ร้านสุภีครกใหญ่</h1>
-              <p>ยินดีต้อนรับ</p>
-              <a href="manu.html" class="btn btn--opacity ibm-plex-sans-thai-medium">รายการ</a>
-
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">เกี่ยวกับ</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
-      </section>
+      </nav>
+
+    </div>
+  </Header>
 
 
+  <div class="overflow-hidden text-center pt-3" style="max-height: 46vh;">
+    <div class="container px-5">
+      <img src="./assets/img/BG.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700"
+        height="500" loading="lazy">
+
+    </div>
+  </div>
+
+  <!-- P'Best Edit -->
+  <!--  ทริค พี่มักจะทำ Section ครอบในแต่ละส่วนให้ชัดเจน -->
+  <div class="px-4 pt-1 my-5 text-center">
+    <h1 class="display-4 fw-bold">ร้านสุภีครกใหญ่</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">ร้านสุภีครกใหญ่ รับทำอาหารนอกสถานที่,
+        เปิดรับการจองโต๊ะ, เข้ามาที่ร้าน,
+        ,ทำข้าวกล่อง, อื่นๆ ติดต่อ</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">สินค้า</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">เกี่ยวกับ</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center pb-3 mb-3 border-bottom">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">หน้าแรก</a></li>
+      <li class="nav-item"><a href="manu.html" class="nav-link px-2 text-body-secondary">สินค้า</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">ติดต่อ</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">เกี่ยวกับ</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+  </footer>
 
 
-
-
-<!-- อย่าลืมดึง Script มาใช้ด้วยนะของ Bootstrap -->
- <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- อย่าลืมดึง Script มาใช้ด้วยนะของ Bootstrap -->
+  <script src="./assets/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
