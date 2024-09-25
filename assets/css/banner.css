@@ -11,9 +11,9 @@ p{
     letter-spacing: 3px;
     font-weight: 500;
     background-color: #daa37f;
-    border-radius: 0;
+    border-radius: 5px;
     text-align: center;
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .btn--opacity {

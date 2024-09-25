@@ -1,8 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-*{
-  font-family: 'itim-regular';
-}
 
 html, body{
   margin: 0;
@@ -23,13 +20,26 @@ html, body{
 .bg-nav{
   background-color: #ffffff;
 }
-.row--center{
-  text-align: center;
 
+*{
+  font-family: "Itim", cursive;
 }
 
 .itim-regular {
   font-family: "Itim", cursive;
-  font-weight: 400;
+  font-weight: lighter;
   font-style: normal;
+}
+.wavy-underline {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 145, 0);
+  text-decoration-style: wavy; 
+  text-underline-offset: 3px;
+}
+.hovertext {
+  font-size: 20px;
+}
+
+.hovertext:hover {
+  font-size: 21px;
 }
