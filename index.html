@@ -17,59 +17,35 @@
 
   <!-- P'Best Edit -->
   <!-- ให้ Header อยู่ครอบนอก Footer เช่นกัน -->
-  <Header class="bg-nav">
+  <header class="py-2 text-dark">
     <div class="container">
-      <!-- เลือกจากเมนูบน Bootstrap ที่ชื่อว่า Navbar แล้วลองปรับใช้ -->
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a class="navbar-brand fs-2 itim-regular" href="#">ร้านสุภีครกใหญ่</a>
 
-      <nav class="navbar navbar-expand-lg bg-body-Light py-3">
-        <div class="container-fluid">
-          <a class="navbar-brand Dark" href="#">ร้านสุภีครกใหญ่</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active colorblacklow" aria-current="page" href="#">หน้าแรก</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">สินค้า</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  เมนู
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">เกี่ยวกับ</a>
-              </li>
-            </ul>
-          </div>
+        <ul class="nav col-12 col-lg-auto mx-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary itim-regular fs-5">หน้าแรก</a></li>
+          <li><a href="#" class="nav-link px-2 text-dark itim-regular fs-5">สินค้า</a></li>
+          <li><a href="#" class="nav-link px-2 text-dark itim-regular fs-5">เมนู</a></li>
+          <li><a href="#" class="nav-link px-2 text-dark itim-regular fs-5">เกี่ยวกับ</a></li>
+        </ul>
+
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2 itim-regular">Login</button>
+          <button type="button" class="btn btn-warning itim-regular">Sign-up</button>
         </div>
-      </nav>
-
+      </div>
     </div>
-  </Header>
+  </header>
 
   <!-- P'Best Edit -->
   <!--  ทริค พี่มักจะทำ Section ครอบในแต่ละส่วนให้ชัดเจน -->
 <div class="banner">
   <div class="banner_overlay">
     <div class="banner_containar">
-      <h1 class="bannertitle">ร้านสุภีครกใหญ่</h1>
-        <p class="bannertext">ยินดีต้อนรับ</p>
-        <a href="#" class="btn btn--opacity">รายการ</a>
+      <h1 class="bannertitle itim-regular">ร้านสุภีครกใหญ่</h1>
+        <p class="bannertext itim-regular">ยินดีต้อนรับ</p>
+        <a href="#" class="btn btn--opacity itim-regular">รายการ</a>
     </div>
     <img class="banner__scroll-down" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiNGRkZGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=" />
   </div>
@@ -78,11 +54,11 @@
 
 
 <div class="px-4 pt-5 my-5 text-center">
-  <h1 >อร่อยยืนหนึ่ง เพราะเราพึ่งผงชูรส</h1>
+  <h1 class="itim-regular">อร่อยยืนหนึ่ง เพราะเราพึ่งผงชูรส</h1>
   <div class="col-lg-4 mx-auto">
-    <p class="lead mb-4">ร้านสุภีครกใหญ่ รับทำอาหารนอกสถานที่,
+    <p class="lead mb-4 itim-regular">ร้านสุภีครกใหญ่ รับทำอาหารนอกสถานที่,
       เปิดรับการจองโต๊ะ, เข้ามาที่ร้าน,
-      ,ทำข้าวกล่อง, อื่นๆ <a href="#">ติดต่อ.</a></p>
+      ,ทำข้าวกล่อง, อื่นๆ <a class="itim-regular" href="#">ติดต่อ.</a></p>
     
   </div>
 </div>
