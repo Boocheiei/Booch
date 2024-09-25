@@ -43,3 +43,6 @@ html, body{
 .hovertext:hover {
   font-size: 21px;
 }
+.card {
+  font-size: 100%;
+}
