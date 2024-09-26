@@ -11,27 +11,28 @@
   <!-- Style ควรเก็บไว้ในโฟลเดอร์ CSS เลย -->
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/slide.css">
 </head>
 
 <body>
 
   <!-- P'Best Edit -->
   <!-- ให้ Header อยู่ครอบนอก Footer เช่นกัน -->
-  <header class="py-2 text-dark">
+  <header class="sticky-top py-2 text-dark bg-light">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
         <a class="navbar-brand fs-2 nav-link text-dark" href="#">ร้านสุภีครกใหญ่</a>
 
         <ul class="nav col-12 col-lg-auto mx-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-dark wavy-underline hovertext">หน้าแรก</a></li>
-          <li><a href="#" class="nav-link px-2 text-dark  hovertext">สินค้า</a></li>
-          <li><a href="#" class="nav-link px-2 text-dark  hovertext">เมนู</a></li>
-          <li><a href="#" class="nav-link px-2 text-dark  hovertext">เกี่ยวกับ</a></li>
+          <li><a href="#" class="nav-link px-2 text-dark  hovertext">รายการแนะนำ</a></li>
+          <li><a href="#" class="nav-link px-2 text-dark  hovertext">รีวิวลูกค้า</a></li>
+          <li><a href="#" class="nav-link px-2 text-dark  hovertext">ติดต่อเรา</a></li>
         </ul>
 
 
         <div class="text-end">
-          <button type="button" class="btnf btn-facebook me-2">facebook page</button>
+          <button  type="button" class="btnf btn-facebook me-2" onclick="window.open('https://www.facebook.com/profile.php?id=100063565331880', '_blank')">facebook page</button>
         </div>
       </div>
     </div>
@@ -39,20 +40,32 @@
 
   <!-- P'Best Edit -->
   <!--  ทริค พี่มักจะทำ Section ครอบในแต่ละส่วนให้ชัดเจน -->
-<div class="banner">
-  <div class="banner_overlay">
-    <div class="banner_containar">
-      <h1 class="bannertitle ">ร้านสุภีครกใหญ่</h1>
-        <p class="bannertext fs-4">ยินดีต้อนรับ</p>
-        <a href="#" class="btn btn--opacity fs-6">รายการ</a>
-    </div>
-    <img class="banner__scroll-down" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiNGRkZGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=" />
+<div class="slideshow-container">
+  <div class="mySlides fades">
+    <img src="assets/img/BG.jpg" style="width:100%">
   </div>
+
+  <div class="mySlides fades">
+    <img src="assets/img/BG.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fades">
+    <img src="assets/img/BG.jpg" style="width:100%">
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div class="dots " style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-
-
-<div class="px-4 pt-5 my-5 text-center">
+<div class="text-center" style="border: 1px solid red;">
   <h1>อร่อยยืนหนึ่ง เพราะเราพึ่งผงชูรส</h1>
   <div class="col-lg-4 mx-auto">
     <p class="lead mb-4 ">ร้านสุภีครกใหญ่ รับทำอาหารนอกสถานที่,
@@ -127,7 +140,7 @@
   </div>
 
 <div class="container py-4">
-  <header class="pb-3 mb-4 border-bottom">
+  <header class="pb-3 mb-4 border-bottom ">
     
             <h1 class="fs-2">ที่อยู่ร้าน</h1>
             <p>108 ม.5 ตำบล พลา อำเภอบ้านฉาง ระยอง 21130</p>
@@ -163,6 +176,7 @@
 
   <!-- อย่าลืมดึง Script มาใช้ด้วยนะของ Bootstrap -->
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 
