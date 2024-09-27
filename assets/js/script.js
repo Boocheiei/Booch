@@ -1,3 +1,10 @@
+document.getElementById('Buttoncontact1').onclick = function() {
+    document.getElementById('sectioncontact').scrollIntoView({ behavior: 'smooth' });
+};
+document.getElementById('Buttoncontact2').onclick = function() {
+    document.getElementById('sectioncontact').scrollIntoView({ behavior: 'smooth' });
+};
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -26,3 +33,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 
 }
+function autoShowSlides() {
+    plusSlides(1);
+  }
+  
+  // ตั้งเวลาเปลี่ยนสไลด์
+  setInterval(autoShowSlides, 5000);

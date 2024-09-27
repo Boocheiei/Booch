@@ -9,6 +9,7 @@
 
 *{
   font-family: "Kanit", sans-serif;
+
 }
 
 
@@ -17,7 +18,16 @@
   background-color: #0d6efd;
   border-color: #000000
 }
-
+.btn-con {
+  color: #ffffff;
+  background-color: #ffbb00;
+  border-color: #ffffff
+}
+.btn-con:hover {
+  color: #000000;
+  background-color: #ffbb00;
+  border-color: #000000
+}
 .btn-facebook:hover {
   color: #000000;
   background-color: #ffffff;
@@ -38,7 +48,6 @@ a {
   text-decoration: none
 }
 .btn {
-  color: #fff;
   padding: 10px 20px;
   font-size: 11px;
   letter-spacing: 3px;
@@ -47,3 +56,8 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
+.navmain{
+  position: relative;
+    left: -4%;
+}
+/*style="border: 1px solid red;*/
