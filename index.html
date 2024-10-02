@@ -1,218 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="SUPEE viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>SUPEE</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="SUPEE viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUPEE</title>
-  <!-- css -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Style ควรเก็บไว้ในโฟลเดอร์ CSS เลย -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/banner.css" />
+    <link rel="stylesheet" href="assets/css/slide.css" />
+  </head>
 
-  <!-- Style ควรเก็บไว้ในโฟลเดอร์ CSS เลย -->
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/banner.css">
-  <link rel="stylesheet" href="assets/css/slide.css">
-</head>
+  <body>
+    <!-- P'Best Edit -->
+    <!-- ให้ Header อยู่ครอบนอก Footer เช่นกัน -->
+    <header class="sticky-top py-2 text-dark bg-light">
+      <div class="container" style="left: 20%">
+        <div class="navmain d-flex flex-wrap align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <a class="navbar-brand fs-2 nav-link text-dark" href="#"
+            >ร้านสุภีครกใหญ่</a
+          >
 
-<body>
+          <ul
+            class="nav col-12 col-lg-auto mx-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="nav-link px-2 text-dark wavy-underline hovertext"
+                >หน้าแรก</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link px-2 text-dark hovertext"
+                >รายการแนะนำ</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link px-2 text-dark hovertext"
+                >รีวิวลูกค้า</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link px-2 text-dark hovertext"
+                id="Buttoncontact1"
+                >ติดต่อเรา</a
+              >
+            </li>
+          </ul>
 
-  <!-- P'Best Edit -->
-  <!-- ให้ Header อยู่ครอบนอก Footer เช่นกัน -->
-  <header class="sticky-top py-2 text-dark bg-light ">
-    <div class="container "style="left: 20%">
-      <div class="navmain d-flex flex-wrap align-items-center ">
-        <img src="assets/img/logo.png" alt="">
-        <a class="navbar-brand fs-2 nav-link text-dark"href="#">ร้านสุภีครกใหญ่</a>
-
-        <ul class="nav col-12 col-lg-auto mx-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-dark wavy-underline hovertext">หน้าแรก</a></li>
-          <li><a href="#" class="nav-link px-2 text-dark  hovertext">รายการแนะนำ</a></li>
-          <li><a href="#" class="nav-link px-2 text-dark  hovertext">รีวิวลูกค้า</a></li>
-          <li><a href="#" class="nav-link px-2 text-dark  hovertext" id="Buttoncontact1">ติดต่อเรา</a></li>
-        </ul>
-
-        <div class="text-end">
-          <button  type="button" class="btnf btn-facebook me-2" onclick="window.open('https://www.facebook.com/profile.php?id=100063565331880', '_blank')">facebook page</button>
+          <div class="text-end">
+            <button
+              type="button"
+              class="btnf btn-facebook me-2"
+              onclick="window.open('https://www.facebook.com/profile.php?id=100063565331880', '_blank')"
+            >
+              facebook page
+            </button>
+          </div>
         </div>
+      </div>
+    </header>
+
+    <!-- P'Best Edit -->
+    <!--  ทริค พี่มักจะทำ Section ครอบในแต่ละส่วนให้ชัดเจน -->
+    <div class="slideshow-container">
+      <div class="mySlides fades">
+        <img src="assets/img/BG1.jpg" style="width: 100%" />
+        <div class="hero-text">
+          <h1>ร้านสุภีครกใหญ่</h1>
+          <p>ยินดีต้อนรับ</p>
+        </div>
+      </div>
+
+      <div class="mySlides fades">
+        <img src="assets/img/BG2.jpg" style="width: 100%" />
+        <div class="hero-text">
+          <h1>ร้านสุภีครกใหญ่</h1>
+          <p>สินค้าและบริการ</p>
+        </div>
+      </div>
+
+      <div class="mySlides fades">
+        <img src="assets/img/BG3.jpeg" style="width: 100%" />
+        <div class="hero-text">
+          <h1>ร้านสุภีครกใหญ่</h1>
+          <p>จองโต๊ะ ข้าวกล่องอาหารนอกสถานที่</p>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div class="dots" style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="grid">
+      <div class="contect">
+        <img src="assets/img/BG2.jpg" class="img-fluid" alt="..." />
+        <h1>OOOPPP</h1>
+      </div>
+      <div class="contect">
+        <img src="assets/img/BG2.jpg" class="img-fluid" alt="..." />
+        <h1>OOOPPP</h1>
+      </div>
+      <div class="contect">
+        <img src="assets/img/BG2.jpg" class="img-fluid" alt="..." />
+        <h1>OOOPPP</h1>
+      </div>
+      <div class="contect">
+        <img src="assets/img/BG2.jpg" class="img-fluid" alt="..." />
+        <h1>OOOPPP</h1>
+      </div>
+      <div class="contect">
+        <img src="assets/img/BG2.jpg" class="img-fluid" alt="..." />
+        <h1>OOOPPP</h1>
+      </div>
+      <div class="contect">
+        <img src="assets/img/BG2.jpg" class="img-fluid" alt="..." />
+        <h1>OOOPPP</h1>
       </div>
     </div>
-  </header>
-
-  <!-- P'Best Edit -->
-  <!--  ทริค พี่มักจะทำ Section ครอบในแต่ละส่วนให้ชัดเจน -->
-<div class="slideshow-container">
-  <div class="mySlides fades ">
-    <img src="assets/img/BG1.jpg" style="width:100%">
-    <div class="hero-text">
-      <h1>ร้านสุภีครกใหญ่</h1>
-    <p>ยินดีต้อนรับ</p>
-  </div>
-  </div>
-
-  <div class="mySlides fades">
-    <img src="assets/img/BG2.jpg" style="width:100%">
-    <div class="hero-text">
-      <h1>ร้านสุภีครกใหญ่</h1>
-    <p>สินค้าและบริการ</p>
-  </div>
-  </div>
-
-  <div class="mySlides fades">
-    
-    <img src="assets/img/BG3.jpeg" style="width:100%">
-    <div class="hero-text">
-      <h1>ร้านสุภีครกใหญ่</h1>
-    <p>จองโต๊ะ ข้าวกล่องอาหารนอกสถานที่</p>
-  </div>
-  </div>
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<div class="dots " style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<div class="grid">
-  <div class="contect">
-    <img src="assets/img/BG2.jpg" class="img-fluid" alt="...">
-    <h1>OOOPPP</h1>
-  </div>
-  <div class="contect">
-    <img src="assets/img/BG2.jpg" class="img-fluid" alt="...">
-    <h1>OOOPPP</h1>
-  </div>
-  <div class="contect">
-    <img src="assets/img/BG2.jpg" class="img-fluid" alt="...">
-    <h1>OOOPPP</h1>
-  </div>
-  <div class="contect">
-    <img src="assets/img/BG2.jpg" class="img-fluid" alt="...">
-    <h1>OOOPPP</h1>
-  </div>
-  <div class="contect">
-    <img src="assets/img/BG2.jpg" class="img-fluid" alt="...">
-    <h1>OOOPPP</h1>
-  </div>
-  <div class="contect">
-    <img src="assets/img/BG2.jpg" class="img-fluid" alt="...">
-    <h1>OOOPPP</h1>
-  </div>
-</div>
-<div class="text-center">
-  <h1>อร่อยยืนหนึ่ง เพราะเราพึ่งผงชูรส</h1>
-  <div class="col-lg-4 mx-auto">
-    <p class="lead mb-4 ">ร้านสุภีครกใหญ่ รับทำอาหารนอกสถานที่,
-      เปิดรับการจองโต๊ะ, เข้ามาที่ร้าน,
-      ,ทำข้าวกล่อง, อื่นๆ <a  href="#">ติดต่อ.</a></p>
-  </div>
-</div>
-
-  <div class="container px-4 py-1" id="custom-cards">
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/1.png');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">อาหารทะเลสดใหม่</h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
- <img src="" alt="">             </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small></small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/2.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">รับทำข้าวกล่อง,อาหารนอกสถานที่</h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
- <img src="" alt="">             </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small></small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">ขนมหวานแสนอร่อย</h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="" alt="">              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small></small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<div class="container py-4"id="sectioncontact">
-  <header class="pb-3 mb-4 border-bottom ">
-    
-            <h1 class="fs-2">ที่อยู่ร้าน</h1>
-            <p>108 ม.5 ตำบล พลา อำเภอบ้านฉาง ระยอง 21130</p>
-    
-  </header>
-
-  <div class="p-2 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-1">
-      
-      <center><iframe class="py-4 map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.722023779356!2d101.03648677531483!3d12.666222387621767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102f477dbf2a98f%3A0xafbc9490a2019264!2z4Lij4LmJ4Liy4LiZ4Liq4Li44Lig4Li1IOC4hOC4o-C4geC5g-C4q-C4jeC5iCDguJ7guKXguLI!5e0!3m2!1sth!2sth!4v1727272819931!5m2!1sth!2sth" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </center>
-        <p class="col-md-8 fs-4">สุภีครกใหญ่
-          📣 เมนูอาหาร
-          เวลาเปิด-ปิด 07:00 น. - 17.00 น. 
-          หยุดทุกวันอังคาร
+    <div class="text-center">
+      <h1>อร่อยยืนหนึ่ง เพราะเราพึ่งผงชูรส</h1>
+      <div class="col-lg-4 mx-auto">
+        <p class="lead mb-4">
+          ร้านสุภีครกใหญ่ รับทำอาหารนอกสถานที่, เปิดรับการจองโต๊ะ,
+          เข้ามาที่ร้าน, ,ทำข้าวกล่อง, อื่นๆ <a href="#">ติดต่อ.</a>
         </p>
-        <p>จองโต๊ะ 084-160-7011</p>
+      </div>
     </div>
-  </div>
 
-</div>
+    <div class="container px-4 py-1" id="custom-cards">
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('assets/img/1.png')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                อาหารทะเลสดใหม่
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="" alt="" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small></small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small></small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center pb-3 mb-3 border-bottom">
-      <li class="nav-item"><a href="#" class="nav-link px-2 ">หน้าแรก</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 ">สินค้า</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 ">ติดต่อ</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 ">เกี่ยวกับ</a></li>
-    </ul>
-    <p class="text-center">© 2023 Company, Inc</p>
-  </footer>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('assets/img/2.jpg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                รับทำข้าวกล่อง,อาหารนอกสถานที่
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="" alt="" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small></small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small></small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('assets/img/3.jpg')"
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                ขนมหวานแสนอร่อย
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="" alt="" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small></small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small></small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- อย่าลืมดึง Script มาใช้ด้วยนะของ Bootstrap -->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/script.js"></script>
+    <div class="container py-4" id="sectioncontact">
+      <header class="pb-3 mb-4 border-bottom">
+        <h1 class="fs-2">ที่อยู่ร้าน</h1>
+        <p>108 ม.5 ตำบล พลา อำเภอบ้านฉาง ระยอง 21130</p>
+      </header>
 
-</body>
+      <div class="p-2 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-1">
+          <center>
+            <iframe
+              class="py-4 map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.722023779356!2d101.03648677531483!3d12.666222387621767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102f477dbf2a98f%3A0xafbc9490a2019264!2z4Lij4LmJ4Liy4LiZ4Liq4Li44Lig4Li1IOC4hOC4o-C4geC5g-C4q-C4jeC5iCDguJ7guKXguLI!5e0!3m2!1sth!2sth!4v1727272819931!5m2!1sth!2sth"
+              width="100%"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </center>
+          <p class="col-md-8 fs-4">
+            สุภีครกใหญ่ 📣 เมนูอาหาร เวลาเปิด-ปิด 07:00 น. - 17.00 น.
+            หยุดทุกวันอังคาร
+          </p>
+          <p>จองโต๊ะ 084-160-7011</p>
+        </div>
+      </div>
+    </div>
 
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center pb-3 mb-3 border-bottom">
+        <li class="nav-item"><a href="#" class="nav-link px-2">หน้าแรก</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">สินค้า</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2">ติดต่อ</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">เกี่ยวกับ</a>
+        </li>
+      </ul>
+      <p class="text-center">© 2023 Company, Inc</p>
+    </footer>
+
+    <!-- อย่าลืมดึง Script มาใช้ด้วยนะของ Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
