@@ -85,10 +85,10 @@ a {
   border: 1px solid red;
   place-items: center;
 }
-
-.contect{
-  border: 1px solid red;
-  
+@media screen and (max-width:1180px){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 }
 @media screen and (max-width:800px){
   .grid{
@@ -96,6 +96,13 @@ a {
     grid-template-rows: auto;
 }
 }
+
+}
+.contect{
+  border: 1px solid red;
+  
+}
+
 
 
 .b-example-divider {
@@ -169,7 +176,7 @@ a {
 @media screen and (max-width:800px){
   .grid-2{
     grid-template-columns: 1fr ;
-    grid-template-rows: auto;
+    grid-template-rows: 6fr;
 }
 }
 
@@ -189,6 +196,6 @@ a {
 }
 
 .zoom:hover {
-  transform: scale(1.5); 
+  transform: scale(1.1); 
 }
 /*style="border: 1px solid red;*/
