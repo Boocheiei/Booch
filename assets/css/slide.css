@@ -1,7 +1,6 @@
-* {box-sizing:border-box}
 
 .slideshow-container {
-    max-width: 100%;
+    border: 1px solid red;
     position: relative;
     margin: auto;
   }
@@ -50,7 +49,8 @@
   }
   .mySlides img {
     filter: blur(5px);
-  height: 100%;
+    width: 100%;
+    height: 91vh;
     object-fit: cover;
   }
 
