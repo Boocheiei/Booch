@@ -65,17 +65,10 @@ a {
   text-transform: uppercase;
 }
 .navmain{
-  position: relative;
-    left: -4%;
 }
 .navmain ul{
-  position: absolute;
-  left: 510px;
 }
 .navmain button{
-  position: absolute;
-  left: 1100px;
-  top: 8px;
 }
 .navmain img{
   height: 55px;
@@ -89,6 +82,13 @@ a {
   column-gap: 100px;
   row-gap: 30px;
   padding: 0% 10%;
+  border: 1px solid red;
+  place-items: center;
+}
+
+.contect{
+  border: 1px solid red;
+  
 }
 @media screen and (max-width:800px){
   .grid{
@@ -96,11 +96,7 @@ a {
     grid-template-rows: auto;
 }
 }
-.contect img{
-width: 350px;
-height: 350px;
-object-fit: cover;
-}
+
 
 .b-example-divider {
   width: 100%;
@@ -180,5 +176,19 @@ object-fit: cover;
 .contect h2{
   text-align: center;
   padding: 20px 0px 0px;
+}
+.zoom {
+  padding: 20px;
+  transition: transform .2s; 
+  margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    
+
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
 }
 /*style="border: 1px solid red;*/
