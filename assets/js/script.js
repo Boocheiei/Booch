@@ -1,6 +1,3 @@
-document.getElementById('Buttoncontact1').onclick = function() {
-    document.getElementById('sectioncontact').scrollIntoView({ behavior: 'smooth' });
-};
 
 let slideIndex = 1;
 showSlides(slideIndex);
