@@ -66,8 +66,8 @@ a {
 }
 
 .navimg{
-  height: 55px;
-    width: 55px;
+  height: 40px;
+    width: 40px;
 }
 
 .grid{
@@ -77,7 +77,6 @@ a {
   column-gap: 100px;
   row-gap: 30px;
   padding: 0% 10%;
-  border: 1px solid red;
   place-items: center;
 }
 @media screen and (max-width:1180px){
@@ -91,13 +90,10 @@ a {
     grid-template-rows: auto;
 }
 }
-
 }
-.contect{
-  border: 1px solid red;
-  
+.contect img{
+  border-radius: 25px;
 }
-
 
 
 .b-example-divider {
